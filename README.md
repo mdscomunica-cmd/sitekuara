@@ -24,8 +24,3 @@ A **Kuará** (do tupi-guarani *kwaray*, o sol) nasce para inspirar novas possibi
 
 ---
 
-## 🚀 Como Executar Localmente
-
-1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/seu-usuario/kuara.git](https://github.com/seu-usuario/kuara.git)
