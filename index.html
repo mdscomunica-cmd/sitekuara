@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuará | Construindo escolas do futuro com afeto e Inovação</title>
+
+  <meta name="description" content="A Kuará constrói coletivamente as escolas do futuro em Búzios, inspiradas pela natureza, pela alegria e pela inovação educacional." />
+  <meta name="keywords" content="Kuará, educação, afeto, inovação, Búzios, ONG, escola, natureza" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <style>
+    :root {
+      --kuara-sun: #f9b53a;
+      --kuara-earth: #e07a5f;
+      --kuara-sky: #3a86ff;
+      --kuara-leaf: #4caf50;
+      --kuara-cream: #fff8ec;
+      --kuara-dark: #2b2b2b;
+    }
+    body {
+      font-family: 'Nunito', sans-serif;
+      color: var(--kuara-dark);
+      background-color: var(--kuara-cream);
+    }
+    h1, h2, h3, .font-poppins { font-family: 'Poppins', sans-serif; }
+    .btn-primary {
+      background: var(--kuara-sun);
+      color: white;
+      font-weight: 700;
+      border-radius: 9999px;
+      padding: 0.75rem 1.75rem;
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+    .btn-primary:hover { transform: scale(1.05); background: #ffca5c; }
+    .curve {
+      background: linear-gradient(to right, var(--kuara-earth), var(--kuara-sun));
+      clip-path: ellipse(80% 100% at 50% 0%);
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+<header class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-md">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="flex items-center space-x-2">
+        <img src="kuara-logo.png" alt="Logo da Kuará" class="w-10 h-10" />
+        <span class="font-poppins text-2xl font-bold text-[var(--kuara-earth)]">Kuará</span>
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="hover:text-[var(--kuara-sun)]">Início</a>
+        <a href="#quem-somos" class="hover:text-[var(--kuara-sun)]">Quem Somos</a>
+        <a href="#projetos" class="hover:text-[var(--kuara-sun)]">Projetos</a>
+        <a href="#contato" class="hover:text-[var(--kuara-sun)]">Contato</a>
+      </nav>
+
+      <a href="#apoie" class="hidden md:block btn-primary">Apoie</a>
+
+      <button id="menu-btn" class="md:hidden text-[var(--kuara-earth)]">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+</header>
+
+  <!-- Hero -->
+  <section id="home" class="relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1920&auto=format&fit=crop"
+      alt="Crianças sorrindo ao sol em projeto educacional da Kuará" 
+      class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30"></div>
+    <div class="relative z-10 max-w-3xl p-6 fade-in">
+      <h1 class="text-5xl md:text-6xl font-poppins font-bold mb-6">Construindo as escolas do futuro com afeto e inovação</h1>
+      <p class="text-lg md:text-xl mb-8">Uma jornada de aprendizado, natureza e alegria em Armação dos Búzios.</p>
+      <a href="#quem-somos" class="btn-primary">Conheça a Kuará</a>
+    </div>
+  </section>
+
+  <!-- Quem Somos -->
+  <section id="quem-somos" class="py-24 bg-[var(--kuara-cream)] relative">
+    <div class="container mx-auto px-6 text-center fade-in">
+      <h2 class="text-4xl font-bold text-[var(--kuara-earth)] mb-4">Nossa essência</h2>
+      <p class="text-[var(--kuara-leaf)] font-semibold mb-12">O sol que nasce para todos.</p>
+
+      <div class="flex flex-col md:flex-row items-center gap-10">
+        <div class="md:w-1/2">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000&auto=format&fit=crop"
+            alt="Educadores e crianças brincando juntos ao ar livre" class="rounded-3xl shadow-xl" />
+        </div>
+        <div class="md:w-1/2 text-left text-lg text-gray-700 space-y-4">
+          <p>A <strong class="text-[var(--kuara-leaf)]">Kuará</strong> é uma organização sem fins lucrativos que experimenta novas formas de ensinar e aprender, unindo ancestralidade, tecnologia e cuidado humano.</p>
+          <p>O nome vem do tupi-guarani <em>kwaray</em>, o sol — símbolo da vida e da igualdade. A Kuará nasce para inspirar novas possibilidades de educação e convivência.</p>
+          <p>Guiam-nos valores de <strong class="text-[var(--kuara-sun)]">afeto, colaboração, inovação e respeito</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="py-24 bg-white curve text-white">
+    <div class="container mx-auto px-6 text-center fade-in">
+      <h2 class="text-4xl font-bold mb-4">Nossas frentes de atuação</h2>
+      <p class="max-w-2xl mx-auto mb-12">Cada ação da Kuará nasce do desejo de transformar a educação e fortalecer a comunidade.</p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <article class="bg-white/20 p-8 rounded-3xl shadow-lg hover:bg-white/30 transition-all">
+          <i data-feather="book-open" class="w-10 h-10 mx-auto mb-4 text-[var(--kuara-sun)]"></i>
+          <h3 class="text-2xl font-bold mb-3">Educação inovadora</h3>
+          <p>Metodologias vivas que unem saberes e emoções, formando seres integrais e criativos.</p>
+        </article>
+
+        <article class="bg-white/20 p-8 rounded-3xl shadow-lg hover:bg-white/30 transition-all">
+          <i data-feather="users" class="w-10 h-10 mx-auto mb-4 text-[var(--kuara-sun)]"></i>
+          <h3 class="text-2xl font-bold mb-3">Projetos comunitários</h3>
+          <p>Espaços de encontro e colaboração entre famílias, educadores e a comunidade buziana.</p>
+        </article>
+
+        <article class="bg-white/20 p-8 rounded-3xl shadow-lg hover:bg-white/30 transition-all">
+          <i data-feather="sun" class="w-10 h-10 mx-auto mb-4 text-[var(--kuara-sun)]"></i>
+          <h3 class="text-2xl font-bold mb-3">Conexão com a natureza</h3>
+          <p>Vivências ao ar livre que fortalecem o vínculo com a terra, o sol e os ciclos da vida.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+<section id="galeria" class="py-24 bg-[var(--kuara-cream)] text-center fade-in">
+    <h2 class="text-4xl font-bold text-[var(--kuara-earth)] mb-10">Momentos Kuará</h2>
+    <div class="grid md:grid-cols-3 gap-6 px-6 max-w-6xl mx-auto">
+      <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=1000&auto=format&fit=crop" class="rounded-2xl shadow-md hover:scale-105 transition-transform" alt="Crianças sorrindo na escola" />
+      <img src="https://images.unsplash.com/photo-1600195077909-46e573870d3b?q=80&w=1000&auto=format&fit=crop" class="rounded-2xl shadow-md hover:scale-105 transition-transform" alt="Educadora em atividade ao ar livre" />
+      <img src="https://images.unsplash.com/photo-1554188248-986adbb73be4?q=80&w=1000&auto=format&fit=crop" class="rounded-2xl shadow-md hover:scale-105 transition-transform" alt="Comunidade reunida em roda" />
+    </div>
+  </section>
+
+  <!-- Apoie -->
+  <section id="apoie" class="py-24 bg-[var(--kuara-sky)] text-white text-center">
+    <h2 class="text-4xl font-bold mb-6">Faça parte da transformação</h2>
+    <p class="max-w-2xl mx-auto mb-10">Sua contribuição ajuda a manter viva a chama do aprendizado e da esperança.</p>
+    <a href="#" class="btn-primary">Doar Agora</a>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-24 bg-[var(--kuara-cream)]">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10 fade-in">
+      <div class="md:w-1/2">
+        <h2 class="text-4xl font-bold text-[var(--kuara-earth)] mb-6">Entre em contato</h2>
+        <p class="text-lg mb-6">Quer saber mais sobre a Kuará ou se voluntariar? Vamos conversar!</p>
+        <p class="font-semibold text-[var(--kuara-leaf)]">📧 contato@kuara.org.br</p>
+        <p class="font-semibold text-[var(--kuara-leaf)]">📍 Armação dos Búzios, RJ</p>
+      </div>
+      <form class="bg-white p-8 rounded-3xl shadow-lg space-y-4 md:w-1/2">
+        <input type="text" placeholder="Nome" class="w-full p-3 border border-gray-300 rounded-lg" required />
+        <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded-lg" required />
+        <textarea rows="5" placeholder="Mensagem" class="w-full p-3 border border-gray-300 rounded-lg" required></textarea>
+        <button class="btn-primary w-full">Enviar</button>
+      </form>
+    </div>
+</section>
+
+  <!-- Footer -->
+<footer class="bg-[var(--kuara-dark)] text-white py-10 text-center">
+    <p>&copy; 2025 Kuará - Escola de Escolas. Feito com ☀️ e 💚 por Maxwell dos Santos.</p>
+</footer>
+
+<script>
+    feather.replace();
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    faders.forEach(f => appearOnScroll.observe(f));
+  </script>
+</body>
+</html>
